@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 80px; /* 👈 navbar ke liye space */
+    padding-top: 80px; /* navbar space */
 }
 
 /* HEADER */
@@ -20,12 +20,14 @@ nav {
     align-items: center;
     background: #222;
     color: white;
-    padding: 15px;
+    padding: 15px 20px; /* 👈 left-right spacing */
 
-    position: fixed;   /* 👈 FIX */
+    position: fixed;
     top: 0;
+    left: 0;              /* 👈 fix alignment */
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box; /* 👈 IMPORTANT */
 }
 
 .logo {
@@ -44,7 +46,7 @@ nav ul {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 10px; /* 👈 right side gap */
 }
 
 nav ul li {
@@ -85,7 +87,7 @@ nav ul li a:hover {
 /* SECTION */
 .section {
     padding: 50px 20px;
-    scroll-margin-top: 120px; /* 👈 FIX */
+    scroll-margin-top: 120px; /* scroll fix */
 }
 
 /* TEXT */
@@ -213,7 +215,7 @@ nav ul {
     flex-direction: column;
     background: #333;
     position: absolute;
-    right: 0;
+    right: 10px; /* 👈 edge se thoda andar */
     top: 60px;
     width: 150px;
 }
