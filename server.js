@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const app = express();
 
+// Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
@@ -11,8 +12,9 @@ if (!fs.existsSync('data.txt')) {
     fs.writeFileSync('data.txt', '');
 }
 
+// 👇 form submit route
 app.post('/join', (req, res) => {
-    console.log(req.body); // 👈 debug
+    console.log(req.body);
 
     const data = req.body;
 
@@ -21,6 +23,9 @@ app.post('/join', (req, res) => {
     res.send("🎉 Form Submitted Successfully!");
 });
 
-app.listen(3000, () => {
-    console.log("🔥 Server running on port 3000");
+// 👇 IMPORTANT (Render ke liye)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log("🔥 Server running on port", PORT);
 });
