@@ -6,12 +6,12 @@ body {
     padding-top: 80px;
 }
 
-/* HEADER */
 header {
-    background: linear-gradient(45deg, purple, violet);
+    background: linear-gradient(135deg, #000000, #3a0ca3);
     color: white;
     padding: 20px;
 }
+
 
 /* 👇 LOGO IMAGE FIX */
 header h1 {
