@@ -14,7 +14,7 @@ header {
     text-align: center;
 }
 
-/* ❌ REMOVE FLEX (important fix) */
+/* HEADER TITLE */
 header h1 {
     margin: 10px 0;
     font-size: 28px;
@@ -22,9 +22,9 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* LOGO IMAGE (CENTER) */
+/* LOGO IMAGE (UPDATED SIZE) */
 .logo-img {
-    height: 60px;
+    height: 90px;   /* 👈 increased size */
     display: block;
     margin: 0 auto 10px;
 }
@@ -44,7 +44,6 @@ nav {
     background: #222;
     color: white;
     padding: 15px 20px;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -204,26 +203,24 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
 
-.menu-icon {
-    display: block;
-}
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        width: 150px;
+        border-radius: 8px;
+    }
 
-nav ul {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    position: absolute;
-    right: 10px;
-    top: 60px;
-    width: 150px;
-    border-radius: 8px;
-}
-
-nav ul.show {
-    display: flex;
-}
-
+    nav ul.show {
+        display: flex;
+    }
 }
 
 /* SMOOTH SCROLL */
