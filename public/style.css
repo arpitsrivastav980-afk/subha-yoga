@@ -31,22 +31,29 @@ header {
 /* NAVBAR */
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background: rgba(17, 24, 39, 0.9);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    z-index: 1000;
 }
 
-/* MENU */
+/* LOGO TEXT */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a855f7;
+}
+
+/* MENU RIGHT */
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin-left: auto;
     padding: 0;
 }
 
@@ -64,7 +71,7 @@ nav ul li a:hover {
     color: #a855f7;
 }
 
-/* 🔥 MENU ICON (ADD) */
+/* MENU ICON */
 .menu-icon {
     display: none;
     font-size: 28px;
@@ -78,6 +85,7 @@ nav ul li a:hover {
     background: url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3') no-repeat center/cover;
 }
 
+/* OVERLAY */
 .overlay {
     position: absolute;
     width: 100%;
@@ -85,6 +93,7 @@ nav ul li a:hover {
     background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
 }
 
+/* HERO CONTENT */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -104,6 +113,17 @@ nav ul li a:hover {
 /* SECTION */
 .section {
     padding: 60px 20px;
+}
+
+/* CENTER TEXT */
+.center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.highlight {
+    color: #a855f7;
+    font-weight: bold;
 }
 
 /* CARDS */
@@ -160,6 +180,11 @@ del {
     transform: scale(1.05);
 }
 
+/* DARK SECTION */
+.dark {
+    background: #0b1220;
+}
+
 /* FOOTER */
 footer {
     background: #020617;
@@ -180,7 +205,7 @@ footer {
     text-decoration: none;
 }
 
-/* 📱 MOBILE DROPDOWN FIX */
+/* MOBILE */
 @media (max-width: 768px) {
 
     .menu-icon {
@@ -190,10 +215,10 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background: #111827;
         position: absolute;
-        top: 60px;
         right: 10px;
+        top: 60px;
+        background: #111827;
         width: 180px;
         border-radius: 10px;
         padding: 10px;
