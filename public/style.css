@@ -11,20 +11,29 @@ header {
     background: linear-gradient(135deg, #000000, #3a0ca3);
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
-/* LOGO IN HEADER */
+/* ❌ REMOVE FLEX (important fix) */
 header h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    margin: 10px 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-/* LOGO IMAGE */
+/* LOGO IMAGE (CENTER) */
 .logo-img {
-    height: 50px;
-    width: auto;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* TAGLINE */
+header p {
+    margin-top: 5px;
+    font-size: 16px;
+    opacity: 0.9;
 }
 
 /* NAVBAR */
@@ -46,11 +55,8 @@ nav {
 
 /* LOGO TEXT */
 .logo {
-    display: flex;
-    align-items: center;
     font-size: 22px;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 /* MENU ICON */
@@ -75,7 +81,6 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -104,7 +109,6 @@ nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-align: center;
     width: 90%;
 }
 
