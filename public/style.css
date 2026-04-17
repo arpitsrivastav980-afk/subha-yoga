@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 80px;
-    background: linear-gradient(135deg, #0f172a, #1e293b); /* modern dark gradient */
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
 }
 
@@ -17,12 +17,17 @@ header {
     text-align: center;
 }
 
-/* HEADER TITLE */
+/* HEADER TITLE (TRANSFORM YOUR BODY STYLE) */
 header h1 {
     margin: 10px 0;
-    font-size: 28px;
+    font-size: 42px;   /* 👈 bigger text */
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    /* ✨ gradient text effect */
+    background: linear-gradient(90deg, #22c55e, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* LOGO */
@@ -31,7 +36,7 @@ header h1 {
     display: block;
     margin: 0 auto 10px;
     transition: 0.3s;
-    filter: drop-shadow(0 0 10px #a855f7); /* glow effect */
+    filter: drop-shadow(0 0 10px #a855f7);
 }
 
 .logo-img:hover {
@@ -41,8 +46,10 @@ header h1 {
 /* TAGLINE */
 header p {
     margin-top: 5px;
-    font-size: 16px;
-    opacity: 0.9;
+    font-size: 18px;   /* 👈 bigger */
+    font-weight: bold;
+    color: #a855f7;    /* 👈 stylish purple */
+    opacity: 1;
 }
 
 /* NAVBAR */
@@ -137,13 +144,14 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* CARDS (GLASS STYLE) */
+/* CARDS */
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* GLASS CARDS */
 .card {
     width: 220px;
     margin: 15px;
@@ -171,7 +179,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* BUTTON (NEON STYLE) */
+/* BUTTON */
 .btn {
     display: inline-block;
     padding: 10px 20px;
