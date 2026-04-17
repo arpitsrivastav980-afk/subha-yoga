@@ -22,11 +22,12 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* LOGO IMAGE (UPDATED SIZE) */
+/* LOGO IMAGE (BIG UPDATED) */
 .logo-img {
-    height: 90px;   /* 👈 increased size */
+    height: 130px;   /* 👈 BIG SIZE */
     display: block;
     margin: 0 auto 10px;
+    transition: 0.3s;
 }
 
 /* TAGLINE */
@@ -220,6 +221,11 @@ footer {
 
     nav ul.show {
         display: flex;
+    }
+
+    /* MOBILE LOGO FIX */
+    .logo-img {
+        height: 90px;
     }
 }
 
