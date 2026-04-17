@@ -39,6 +39,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box; /* 🔥 FIX */
     z-index: 1000;
 }
 
@@ -49,14 +50,15 @@ nav {
     color: #a855f7;
 }
 
-/* MENU RIGHT */
+/* MENU FIX */
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: auto;
+    margin: 0;          /* 👈 FIX */
     padding: 0;
 }
 
+/* MENU ITEMS */
 nav ul li {
     margin: 10px;
 }
@@ -115,7 +117,7 @@ nav ul li a:hover {
     padding: 60px 20px;
 }
 
-/* CENTER TEXT */
+/* TEXT */
 .center {
     max-width: 600px;
     margin: auto;
@@ -133,7 +135,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-/* GLASS CARD */
+/* CARD */
 .card {
     width: 230px;
     margin: 15px;
@@ -180,7 +182,7 @@ del {
     transform: scale(1.05);
 }
 
-/* DARK SECTION */
+/* DARK */
 .dark {
     background: #0b1220;
 }
@@ -192,7 +194,7 @@ footer {
     margin-top: 20px;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
