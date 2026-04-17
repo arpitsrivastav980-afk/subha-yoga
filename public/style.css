@@ -6,23 +6,25 @@ body {
     padding-top: 80px;
 }
 
+/* HEADER */
 header {
     background: linear-gradient(135deg, #000000, #3a0ca3);
     color: white;
     padding: 20px;
 }
 
-
-/* 👇 LOGO IMAGE FIX */
+/* LOGO IN HEADER */
 header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
+/* LOGO IMAGE */
 .logo-img {
-    width: 60px;
-    margin-right: 10px;
+    height: 50px;
+    width: auto;
 }
 
 /* NAVBAR */
@@ -42,11 +44,16 @@ nav {
     box-sizing: border-box;
 }
 
+/* LOGO TEXT */
 .logo {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
+/* MENU ICON */
 .menu-icon {
     display: none;
     font-size: 25px;
@@ -58,7 +65,7 @@ nav ul {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
 }
 
 nav ul li {
@@ -68,6 +75,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -202,9 +210,10 @@ nav ul {
     flex-direction: column;
     background: #333;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 60px;
     width: 150px;
+    border-radius: 8px;
 }
 
 nav ul.show {
